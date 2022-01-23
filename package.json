@@ -1,0 +1,23 @@
+{
+  "name": "ReadMeMaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauragupta/ReadMeMaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauragupta/ReadMeMaker/issues"
+  },
+  "homepage": "https://github.com/lauragupta/ReadMeMaker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
