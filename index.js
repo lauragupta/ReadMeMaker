@@ -56,21 +56,64 @@ inquirer.prompt([
 ])
 .then((response) => {
     console.log(response);
-}
-);
 
-let projectTitle = response.projectTitle;
-let description = response.description;
-let installation = response.installation;
-let usage = response.usage;
-let credits = response.credits;
-let license = response.license;
-let contributng = response.contributng;
-let tests = response.tests;
-let username = response.username;
-let email = response.email;
+    let projectTitle = response.projectTitle;
+    let description = response.description;
+    let installation = response.installation;
+    let usage = response.usage;
+    let credits = response.credits;
+    let license = response.license;
+    let contributing = response.contributng;
+    let tests = response.tests;
+    let username = response.username;
+    let email = response.email;
+
+    let body = 
+    `# ${projectTitle}
+
+    ## Description 
+
+    ${description}
 
 
-// fs.writeFile('log.txt', process.argv[2], (err)
-//     err ? console.error(err) : console.log('Success!')
-// );
+    ## Table of Contents (Optional)
+
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Credits](#credits)
+    * [License](#license)
+
+
+    ## Installation
+
+    ${installation}
+
+    ## Usage 
+
+    ![alt text](assets/images/${usage}.png)
+
+    ## Credits
+    ${credits}
+
+    ## License
+    ${license}
+    [https://choosealicense.com/](https://choosealicense.com/)
+
+    ## Contributing
+    ${contributing}
+
+    [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
+
+    ## Tests
+
+    ${tests}
+
+    ## Questions 
+    For questions, contact me at [GitHub](https://github.com/${username} or email me at ${email}
+        Thanks for reading!`
+
+
+    fs.writeFile("README.md", body, (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
+});
