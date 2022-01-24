@@ -44,12 +44,12 @@ inquirer.prompt([
         type: 'input'
     },
     {
-        name: 'questions1',
+        name: 'username',
         message: 'What is your GitHub profile username?',
         type: 'input'
     },
     {
-        name: 'questions2',
+        name: 'email',
         message: 'What email would you like to use to answer questions from others?',
         type: 'input'
     },
@@ -59,6 +59,18 @@ inquirer.prompt([
 }
 );
 
-fs.writeFile('log.txt', process.argv[2], (err)
-    err ? console.error(err) : console.log('Success!')
-);
+let projectTitle = response.projectTitle;
+let description = response.description;
+let installation = response.installation;
+let usage = response.usage;
+let credits = response.credits;
+let license = response.license;
+let contributng = response.contributng;
+let tests = response.tests;
+let username = response.username;
+let email = response.email;
+
+
+// fs.writeFile('log.txt', process.argv[2], (err)
+//     err ? console.error(err) : console.log('Success!')
+// );
