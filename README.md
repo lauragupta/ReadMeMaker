@@ -2,7 +2,7 @@
 
 ## Description  
 
-Create great README files using inquirer and terminal  
+Use this project to create fantastic REAME.md files using inquirer and your terminal  
 
 ## Table of Contents   
 
@@ -14,14 +14,14 @@ Create great README files using inquirer and terminal
 
 ## Installation
 
-install inquirer 
+install inquirer
 
 ## Usage 
 
-![alt text](assets/images/yes, soon.png)
+        ![Photo of completed README](assets/undefined)
 
-    ## Credits
-        [my mom](mymom.com)
+## Credits
+        [Me Myself and I](mygithub)
 
 ## License
 MIT
@@ -29,13 +29,13 @@ MIT
 https://img.shields.io/github/license/lauragupta/ReadMeMaker
 
 ## Contributing
-In a bit
+Coming Soon
 
 [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
 
 ## Tests
 
-none, yet
+No Tests today
 
 ## Questions 
 For questions, contact me at [GitHub](https://github.com/lauragupta or email me at codinglauragupta@gmail.com

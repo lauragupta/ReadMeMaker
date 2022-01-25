@@ -19,9 +19,26 @@ inquirer.prompt([
     },
     {
         name: 'usage',
-        message: 'Would you like to add images/screenshots of your program?',
-        type: 'input'
+        message: 'Would you like to add images/screenshots of your program (if so, put the image in your assets folder)?',
+        type: 'confirm',
+        default: false
+    },  
+    {
+        name: 'usageImg',
+        message: 'What is your photo title and type of photo (example - screenshot.png)?',
+        type: 'input',
+        when(response) {
+            return response.usage === true;
+        }
     },
+    {
+        name: 'usageAlt',
+        message: 'What is the description of the photo?',
+        type: 'input',
+        when(response) {
+            return response.usage === true;
+        }
+    },  
     {
         name: 'creditPeople',
         message: 'Did you have any collaborators on this project?',
@@ -91,6 +108,8 @@ inquirer.prompt([
     let description = response.description;
     let installation = response.installation;
     let usage = response.usage;
+    let usageImg = response.usageImg;
+    let usageAlt = response.usageAlt;
     let creditPeople = response.creditPeople;
     let collaboratorName = response.collaboratorName;
     let collaboratorGitHub = response.collaboratorGitHub;
@@ -101,10 +120,21 @@ inquirer.prompt([
     let email = response.email;
     
     if(creditPeople === true) {
-        creditPeople =`    ## Credits
-        [${collaboratorName}](${collaboratorGitHub})`
+        creditPeople =`## Credits
+        [${collaboratorName}](https://github.com/${collaboratorGitHub})`
+        credits = `* [Credits](#credits)`
     }else {
         creditPeople = ``
+        credits = ``
+    }
+    if(usage === true) {
+        usage =`## Usage 
+
+    ![${usageAlt}](assets/${usageImg})`
+        use = `* [Usage](#usage)`
+    }else {
+        usage = ``
+        use = ``
     }
 
     let body = 
@@ -117,8 +147,8 @@ ${description}
 ## Table of Contents   
 
 * [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
+${use}
+${credits}
 * [License](#license)
 
 
@@ -126,9 +156,7 @@ ${description}
 
 ${installation}
 
-## Usage 
-
-![alt text](assets/images/${usage}.png)
+${usage}
 
 ${creditPeople}
 
