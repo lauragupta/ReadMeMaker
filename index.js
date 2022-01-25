@@ -55,7 +55,7 @@ inquirer.prompt([
     },
     {
         name: 'collaboratorGitHub',
-        message: 'What is the collaborators GitHub account link?',
+        message: 'What is the collaborators GitHub username?',
         type: 'input',
         when(response) {
             return response.creditPeople === true;
@@ -68,8 +68,16 @@ inquirer.prompt([
         default: false
     },
     {
-        name: 'creditWebsiteName',
+        name: 'creditWebsiteAddress',
         message: 'What is the full website address?',
+        type: 'input',
+        when(response) {
+            return response.creditSites === true;
+        }
+    },
+    {
+        name: 'creditWebsiteName',
+        message: 'What is the website name?',
         type: 'input',
         when(response) {
             return response.creditSites === true;
@@ -123,6 +131,9 @@ inquirer.prompt([
     let usageImg = response.usageImg;
     let usageAlt = response.usageAlt;
     let creditPeople = response.creditPeople;
+    let creditSites = response.creditSites;
+    let creditWebsiteAddress = response.creditWebsiteAddress;
+    let creditWebsiteName = response.creditWebsiteName;
     let collaboratorName = response.collaboratorName;
     let collaboratorGitHub = response.collaboratorGitHub;
     let license = response.license;
@@ -133,15 +144,24 @@ inquirer.prompt([
     let username = response.username;
     let email = response.email;
 
-    
-    if(creditPeople === true) {
+    if(creditPeople === true && creditSites === true) {
+        creditPeople =`## Credits
+[${collaboratorName}](https://github.com/${collaboratorGitHub})
+![${creditWebsiteName}](${creditWebsiteAddress})`
+        credits = `* [Credits](#credits)`
+    } else if(creditPeople === true) {
         creditPeople =`## Credits
 [${collaboratorName}](https://github.com/${collaboratorGitHub})`
         credits = `* [Credits](#credits)`
-    }else {
+    } else if(creditSites === true){
+        creditPeople =`## Credits
+![${creditWebsiteName}](${creditWebsiteAddress})`
+        credits = `* [Credits](#credits)`
+    } else{
         creditPeople = ``
         credits = ``
     }
+
     if(usage === true) {
         usage =`## Usage 
 
