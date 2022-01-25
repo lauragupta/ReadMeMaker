@@ -26,6 +26,7 @@ First, you will need to Clone the repository. Then, you will need to do an npm i
 
 ## Credits
 [Laura Gupta](https://github.com/lauragupta)
+
 ![Inquirer NPM](https://www.npmjs.com/package/inquirer)
 
 ## License

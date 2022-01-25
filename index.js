@@ -147,6 +147,7 @@ inquirer.prompt([
     if(creditPeople === true && creditSites === true) {
         creditPeople =`## Credits
 [${collaboratorName}](https://github.com/${collaboratorGitHub})
+
 ![${creditWebsiteName}](${creditWebsiteAddress})`
         credits = `* [Credits](#credits)`
     } else if(creditPeople === true) {
