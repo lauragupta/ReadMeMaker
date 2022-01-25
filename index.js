@@ -177,6 +177,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.`
     }else if(license === 'ISC') {
+        badge = `![GitHub ISC License](https://img.shields.io/badge/license-ISC-green)`;
         license = 
 `ISC License
 
@@ -194,6 +195,7 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.`
     }else if(license === 'unlicense') {
+        badge = `![GitHub unlicense License](https://img.shields.io/badge/license-unlicense-red)`;
         license = 
 `This is free and unencumbered software released into the public domain.
 
