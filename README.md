@@ -1,6 +1,6 @@
 # ReadMeMaker  
 
-[![GitHub MIT License](https://img.shields.io/github/license/lauragupta/ReadMeMaker)]
+![GitHub MIT License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description  
 

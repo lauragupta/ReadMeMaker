@@ -153,7 +153,7 @@ inquirer.prompt([
     }
 
     if(license === 'MIT') {
-        badge = `[![GitHub MIT License](https://img.shields.io/github/license/lauragupta/ReadMeMaker)]`;
+        badge = `![GitHub MIT License](https://img.shields.io/badge/license-MIT-blue)`;
         license = 
 `MIT License
 
