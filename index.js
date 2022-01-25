@@ -23,19 +23,49 @@ inquirer.prompt([
         type: 'input'
     },
     {
-        name: 'credits',
-        message: 'Who helped you with this project (list any collaborators)?',
-        type: 'input'
+        name: 'creditPeople',
+        message: 'Did you have any collaborators on this project?',
+        type: 'confirm',
+        default: false
+    },
+    {
+        name: 'collaboratorName',
+        message: 'Who helped you with this project (collaborator)?',
+        type: 'input',
+        when(response) {
+            return response.creditPeople === true;
+        }
+    },
+    {
+        name: 'collaboratorGitHub',
+        message: 'What is the collaborators GitHub account link?',
+        type: 'input',
+        when(response) {
+            return response.creditPeople === true;
+        }
+    },
+    {
+        name: 'creditSites',
+        message: 'Did you use any websites you need to credit?',
+        type: 'confirm',
+        default: false
+    },
+    {
+        name: 'creditWebsiteName',
+        message: 'What is the full website address?',
+        type: 'input',
+        when(response) {
+            return response.creditSites === true;
+        }
     },
     {
         name: 'license',
         message: 'Choose a license for your project.',
         type: 'input'
     },
-
     {
         name: 'contributng',
-        message: 'Do you want to add directions for others to contribute to your project too?',
+        message: 'What directions do you have for others to contribute to your project?',
         type: 'input'
     },
     {
@@ -61,12 +91,14 @@ inquirer.prompt([
     let description = response.description;
     let installation = response.installation;
     let usage = response.usage;
-    let credits = response.credits;
+    let collaboratorName = response.collaboratorName;
+    let collaboratorGitHub = response.collaboratorGitHub;
     let license = response.license;
     let contributing = response.contributng;
     let tests = response.tests;
     let username = response.username;
     let email = response.email;
+    
 
     let body = 
     `# ${projectTitle}
@@ -76,7 +108,7 @@ inquirer.prompt([
     ${description}
 
 
-    ## Table of Contents (Optional)
+    ## Table of Contents 
 
     * [Installation](#installation)
     * [Usage](#usage)
@@ -93,11 +125,12 @@ inquirer.prompt([
     ![alt text](assets/images/${usage}.png)
 
     ## Credits
-    ${credits}
+    [${collaboratorName}](${collaboratorGitHub})
 
     ## License
     ${license}
     [https://choosealicense.com/](https://choosealicense.com/)
+    https://img.shields.io/github/license/lauragupta/ReadMeMaker
 
     ## Contributing
     ${contributing}
