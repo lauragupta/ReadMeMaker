@@ -108,47 +108,47 @@ inquirer.prompt([
     }
 
     let body = 
-    `# ${projectTitle}  
-    
-    ## Description  
-    
-    ${description}  
-    
-    ## Table of Contents   
-    
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
+`# ${projectTitle}  
+
+## Description  
+
+${description}  
+
+## Table of Contents   
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 
 
-    ## Installation
+## Installation
 
-    ${installation}
+${installation}
 
-    ## Usage 
+## Usage 
 
-    ![alt text](assets/images/${usage}.png)
+![alt text](assets/images/${usage}.png)
 
-    ${creditPeople}
+${creditPeople}
 
-    ## License
-    ${license}
-    [https://choosealicense.com/](https://choosealicense.com/)
-    https://img.shields.io/github/license/lauragupta/ReadMeMaker
+## License
+${license}
+[https://choosealicense.com/](https://choosealicense.com/)
+https://img.shields.io/github/license/lauragupta/ReadMeMaker
 
-    ## Contributing
-    ${contributing}
+## Contributing
+${contributing}
 
-    [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
+[Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
 
-    ## Tests
+## Tests
 
-    ${tests}
+${tests}
 
-    ## Questions 
-    For questions, contact me at [GitHub](https://github.com/${username} or email me at ${email}
-        Thanks for reading!`
+## Questions 
+For questions, contact me at [GitHub](https://github.com/${username} or email me at ${email}
+Thanks for reading!`
 
 
     fs.writeFile("README.md", body, (err) =>

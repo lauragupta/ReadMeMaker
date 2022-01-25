@@ -1,42 +1,42 @@
 # ReadMeMaker  
-    
-    ## Description  
-    
-    Make quality README documents fusing inquirer and terminal  
-    
-    ## Table of Contents   
-    
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
+
+## Description  
+
+Create great README files using inquirer and terminal  
+
+## Table of Contents   
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 
 
-    ## Installation
+## Installation
 
-    install inquirer
+install inquirer 
 
-    ## Usage 
+## Usage 
 
-    ![alt text](assets/images/Yes, in a bit.png)
+![alt text](assets/images/yes, soon.png)
 
-        ## Credits
-        [Me Myself and I](a github link)
+    ## Credits
+        [my mom](mymom.com)
 
-    ## License
-    MIT
-    [https://choosealicense.com/](https://choosealicense.com/)
-    https://img.shields.io/github/license/lauragupta/ReadMeMaker
+## License
+MIT
+[https://choosealicense.com/](https://choosealicense.com/)
+https://img.shields.io/github/license/lauragupta/ReadMeMaker
 
-    ## Contributing
-    This will have directions later
+## Contributing
+In a bit
 
-    [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
+[Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
 
-    ## Tests
+## Tests
 
-    no tests yet
+none, yet
 
-    ## Questions 
-    For questions, contact me at [GitHub](https://github.com/lauragupta or email me at codinglauragupta@gmail.com
-        Thanks for reading!
+## Questions 
+For questions, contact me at [GitHub](https://github.com/lauragupta or email me at codinglauragupta@gmail.com
+Thanks for reading!
