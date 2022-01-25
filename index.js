@@ -91,6 +91,7 @@ inquirer.prompt([
     let description = response.description;
     let installation = response.installation;
     let usage = response.usage;
+    let creditPeople = response.creditPeople;
     let collaboratorName = response.collaboratorName;
     let collaboratorGitHub = response.collaboratorGitHub;
     let license = response.license;
@@ -99,6 +100,12 @@ inquirer.prompt([
     let username = response.username;
     let email = response.email;
     
+    if(creditPeople === true) {
+        creditPeople =`    ## Credits
+        [${collaboratorName}](${collaboratorGitHub})`
+    }else {
+        creditPeople = ``
+    }
 
     let body = 
     `# ${projectTitle}
@@ -106,7 +113,6 @@ inquirer.prompt([
     ## Description 
 
     ${description}
-
 
     ## Table of Contents 
 
@@ -124,8 +130,7 @@ inquirer.prompt([
 
     ![alt text](assets/images/${usage}.png)
 
-    ## Credits
-    [${collaboratorName}](${collaboratorGitHub})
+    ${creditPeople}
 
     ## License
     ${license}
