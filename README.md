@@ -12,17 +12,21 @@ This project creates fantastic quality README.md documents using questions you a
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 
-install inquirer and run the program using the comand 'node index.js'
+First, you will need to Clone the repository. Then, you will need to do an npm install of the dependencies (for this it is inquirer). Last, you will go to your terminal and run node index.js  ** It's also important to note you will be asked for your github username and your email also. *** Also, this will write over any current README.md file you have in the folder.***
 
 ## Usage 
 
-![photo of ReadMe using ReadMeMaker](assets/screenshot.png)
+![Photo of README.md created by ReadMeMaker](assets/screenshot.png)
 
 ## Credits
 [Laura Gupta](https://github.com/lauragupta)
+![Inquirer NPM](https://www.npmjs.com/package/inquirer)
 
 ## License
 MIT License
@@ -49,13 +53,14 @@ SOFTWARE.
 https://img.shields.io/github/license/lauragupta/ReadMeMaker
 
 ## Contributing
-Coming Soon
+Contributions are Coming Soon
 
-[Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
+Please Review this Contributor Covenant before helping out. 
+![Contributor Covenant](https://www.contributor-covenant.org/) 
 
 ## Tests
 
-None at this time
+No Tests Yet
 
 ## Questions 
 For questions, contact me at [GitHub](https://github.com/lauragupta) or email me at <codinglauragupta@gmail.com>
