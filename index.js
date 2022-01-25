@@ -151,7 +151,7 @@ inquirer.prompt([
         use = ``
     }
 
-    if(license === MIT) {
+    if(license === 'MIT') {
         license = 
 `MIT License
 
@@ -174,7 +174,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.`
-    }else if(license === ISC) {
+    }else if(license === 'ISC') {
         license = 
 `ISC License
 
@@ -191,7 +191,7 @@ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
 LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.`
-    }else if(license === unlicense) {
+    }else if(license === 'unlicense') {
         license = 
 `This is free and unencumbered software released into the public domain.
 
