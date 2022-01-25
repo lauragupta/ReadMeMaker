@@ -255,7 +255,7 @@ ${contributing}
 ${tests}
 
 ## Questions 
-For questions, contact me at [GitHub](https://github.com/${username}) or email me at ${email}
+For questions, contact me at [GitHub](https://github.com/${username}) or email me at <${email}>
 Thanks for reading!`
 
 
