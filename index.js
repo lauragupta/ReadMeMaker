@@ -273,7 +273,6 @@ ${creditPeople}
 
 ## License
 ${license}
-https://img.shields.io/github/license/lauragupta/ReadMeMaker
 
 ## Contributing
 ${contributing}
