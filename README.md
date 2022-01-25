@@ -1,13 +1,4 @@
-# ReadMeMaker
-
-    ## Description 
-
-    Changes the world!
-
-
-    ## Table of Contents 
-
-    * [Installation](#installation)
+# sdf  ## Description  asdf  ## Table of Contents   * [Installation](#installation)
     * [Usage](#usage)
     * [Credits](#credits)
     * [License](#license)
@@ -15,29 +6,28 @@
 
     ## Installation
 
-    inquirer
+    asdf
 
     ## Usage 
 
-    ![alt text](assets/images/sd.png)
+    ![alt text](assets/images/afd.png)
 
-        ## Credits
-        [Joe](mama)
+    
 
     ## License
-    sdf
+    adf
     [https://choosealicense.com/](https://choosealicense.com/)
     https://img.shields.io/github/license/lauragupta/ReadMeMaker
 
     ## Contributing
-    sdf
+    adf
 
     [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
 
     ## Tests
 
-    not yet
+    adfs
 
     ## Questions 
-    For questions, contact me at [GitHub](https://github.com/lauragupta or email me at codinglauragupta@gmail.com
+    For questions, contact me at [GitHub](https://github.com/adf or email me at afd
         Thanks for reading!
