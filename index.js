@@ -132,6 +132,7 @@ inquirer.prompt([
     let tests = response.tests;
     let username = response.username;
     let email = response.email;
+
     
     if(creditPeople === true) {
         creditPeople =`## Credits
@@ -152,6 +153,7 @@ inquirer.prompt([
     }
 
     if(license === 'MIT') {
+        badge = `[![GitHub MIT License](https://img.shields.io/github/license/lauragupta/ReadMeMaker)]`;
         license = 
 `MIT License
 
@@ -221,6 +223,8 @@ For more information, please refer to <https://unlicense.org>`
 
     let body = 
 `# ${projectTitle}  
+
+${badge}
 
 ## Description  
 

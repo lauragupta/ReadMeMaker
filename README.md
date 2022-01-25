@@ -1,8 +1,10 @@
 # ReadMeMaker  
 
+[![GitHub MIT License](https://img.shields.io/github/license/lauragupta/ReadMeMaker)]
+
 ## Description  
 
-This project creates fantastic quality README.md documents using questions you are asked by using inquirer and your terminal  
+This project creates fantastic quality README.md documents using questions you are asked by using inquirer and your terminal.  
 
 ## Table of Contents   
 
@@ -17,7 +19,7 @@ install inquirer and run the program using the comand 'node index.js'
 
 ## Usage 
 
-![Photo of ReadMeMaker](assets/screenshot.png)
+![photo of ReadMe using ReadMeMaker](assets/screenshot.png)
 
 ## Credits
 [Laura Gupta](https://github.com/lauragupta)
@@ -53,8 +55,8 @@ Coming Soon
 
 ## Tests
 
-No tests at this time
+None at this time
 
 ## Questions 
-For questions, contact me at [GitHub](https://github.com/lauragupta) or email me at codinglauragupta@gmail.com
+For questions, contact me at [GitHub](https://github.com/lauragupta) or email me at <codinglauragupta@gmail.com>
 Thanks for reading!
