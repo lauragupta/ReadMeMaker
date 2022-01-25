@@ -277,7 +277,8 @@ https://img.shields.io/github/license/lauragupta/ReadMeMaker
 ## Contributing
 ${contributing}
 
-[Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
+Please Review this Contributor Covenant before helping out. 
+![Contributor Covenant](https://www.contributor-covenant.org/) 
 
 ## Tests
 
