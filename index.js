@@ -107,7 +107,16 @@ inquirer.prompt([
         creditPeople = ``
     }
 
-    let body = `# ${projectTitle}  ## Description  ${description}  ## Table of Contents   * [Installation](#installation)
+    let body = 
+    `# ${projectTitle}  
+    
+    ## Description  
+    
+    ${description}  
+    
+    ## Table of Contents   
+    
+    * [Installation](#installation)
     * [Usage](#usage)
     * [Credits](#credits)
     * [License](#license)
