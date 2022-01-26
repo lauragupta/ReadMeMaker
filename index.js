@@ -1,6 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 
+//All the questions for the program
 inquirer.prompt([
     {
       name: 'projectTitle',
@@ -124,6 +125,7 @@ inquirer.prompt([
 .then((response) => {
     console.log(response);
 
+    //setting all the variables for the answers to the questions
     let projectTitle = response.projectTitle;
     let description = response.description;
     let installation = response.installation;
@@ -144,6 +146,7 @@ inquirer.prompt([
     let username = response.username;
     let email = response.email;
 
+    //function to determin if we want to credit people or websites or both or neither
     if(creditPeople === true && creditSites === true) {
         creditPeople =`## Credits
 [${collaboratorName}](https://github.com/${collaboratorGitHub})
@@ -163,6 +166,7 @@ inquirer.prompt([
         credits = ``
     }
 
+    //function to decide if we are adding an image and therefore also a usage section or no image and no usage section
     if(usage === true) {
         usage =`## Usage 
 
@@ -173,6 +177,7 @@ inquirer.prompt([
         use = ``
     }
 
+    //function to decide which license to post which also includes which license badge to post
     if(license === 'MIT') {
         badge = `![GitHub MIT License](https://img.shields.io/badge/license-MIT-blue)`;
         license = 
@@ -244,6 +249,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <https://unlicense.org>`
     }
 
+    //adding the text to the body of the README.md document with variables where they will be inserted
     let body = 
 `# ${projectTitle}  
 
@@ -289,7 +295,7 @@ ${tests}
 For questions, contact me at [GitHub](https://github.com/${username}) or email me at <${email}>
 Thanks for reading!`
 
-
+//function to write file to the README.md or to console an error if there is one
     fs.writeFile("README.md", body, (err) =>
         err ? console.error(err) : console.log('Success!')
     );
