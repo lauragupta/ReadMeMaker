@@ -18,16 +18,16 @@ This project creates fantastic quality README.md documents using questions you a
 
 ## Installation
 
-First, you will need to Clone the repository. Then, you will need to do an npm install of the dependencies (for this it is inquirer). Last, you will go to your terminal and run node index.js  ** It's also important to note you will be asked for your github username and your email also. ** Also, this will write over any current README.md file you have in the folder.
+First, you will need to Clone the repository. Then, you will need to do an npm install of the dependencies (for this it is inquirer). Last, you will go to your terminal and run node index.js ** It's also important to note you will be asked for your github username and your email also. ** Also, this will write over any current README.md file you have in the folder.
 
 ## Usage 
 
-![Photo of README.md created by ReadMeMaker](assets/screenshot.png)
+![video of README.md made by ReadMeMaker](https://watch.screencastify.com/v/aJA8hUvhmn79EhLKwnsX)
 
 ## Credits
 [Laura Gupta](https://github.com/lauragupta)
 
-[Inquirer NPM](https://www.npmjs.com/package/inquirer)
+[NPM Inquirer](https://www.npmjs.com/package/inquirer)
 
 ## License
 MIT License
@@ -52,9 +52,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
 ## Contributing
-Contributions are Coming Soon
+Contributing Coming Soon!
 
 Please Review this Contributor Covenant before helping out. 
 
