@@ -22,7 +22,7 @@ First, you will need to Clone the repository. Then, you will need to do an npm i
 
 ## Usage 
 
-![video of README.md made by ReadMeMaker](https://watch.screencastify.com/v/aJA8hUvhmn79EhLKwnsX)
+[video of ReadMeMaker](https://watch.screencastify.com/v/aJA8hUvhmn79EhLKwnsX)
 
 ## Credits
 [Laura Gupta](https://github.com/lauragupta)
