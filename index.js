@@ -148,7 +148,7 @@ inquirer.prompt([
         creditPeople =`## Credits
 [${collaboratorName}](https://github.com/${collaboratorGitHub})
 
-![${creditWebsiteName}](${creditWebsiteAddress})`
+[${creditWebsiteName}](${creditWebsiteAddress})`
         credits = `* [Credits](#credits)`
     } else if(creditPeople === true) {
         creditPeople =`## Credits
@@ -156,7 +156,7 @@ inquirer.prompt([
         credits = `* [Credits](#credits)`
     } else if(creditSites === true){
         creditPeople =`## Credits
-![${creditWebsiteName}](${creditWebsiteAddress})`
+[${creditWebsiteName}](${creditWebsiteAddress})`
         credits = `* [Credits](#credits)`
     } else{
         creditPeople = ``
@@ -279,7 +279,7 @@ ${contributing}
 
 Please Review this Contributor Covenant before helping out. 
 
-![Contributor Covenant](https://www.contributor-covenant.org/) 
+[Contributor Covenant](https://www.contributor-covenant.org/) 
 
 ## Tests
 
